@@ -11,12 +11,14 @@ const NavigationBar = () => {
     <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src={FerlunLogo}
-              className={`${styles["logo"]}`}
-              alt="page logo, cat-man riding huge cat"
-            />
+          <Navbar.Brand>
+            <Link to="/">
+              <img
+                src={FerlunLogo}
+                className={`${styles["logo"]}`}
+                alt="page logo, cat-man sleeping on huge cat"
+              />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
